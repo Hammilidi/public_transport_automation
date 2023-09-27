@@ -1,0 +1,17 @@
+{
+	"name": "PublicTransport",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/public-transport/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/72eb7803-e874-44cb-b6d9-33f2fa3eb88c/resourceGroups/DataResourceGRP/providers/Microsoft.Storage/storageAccounts/fidelistorage",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
